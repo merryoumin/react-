@@ -1,0 +1,35 @@
+.container {
+  background-color: rgba(2, 237, 49, 0.12);
+  display: flex;
+  /* flex는 부모에게 먹임/ 한줄안에 다체움 */
+  /* display: inline-block; */
+  /* inline-block은 자신에게 먹이고 자식에게 상속 안됨, 한 줄 안됨 다음줄로 */
+  /* flex-direction: column; */
+  /* flex-direction: row;  */
+  min-height: 100vh;
+  /* vh는 모니터 사양에 맞는 높이 */
+  justify-content: space-evenly;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+  /* justify-content: space-between; */
+  /* 라우저 크기에 맞추어 처음과 중간 끝으로 나누어짐 */
+  /* align-items: center; */
+  /* 메인 방향에 교차 되는 방향 */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.box:nth-child(1) {
+  background-color: aqua;
+}
+
+.box:nth-child(2) {
+  background-color: rgb(71, 140, 85);
+}
+
+.box:nth-child(3) {
+  background-color: rgb(184, 194, 70);
+}
