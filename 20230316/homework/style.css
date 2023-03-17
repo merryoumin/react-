@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+body {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  color: #222222;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+}
+
+.shearchArea {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-evenly;
+}
+.searchP {
+  position: relative;
+}
+
+.searchC {
+  position: absolute;
+}
+
+.searchiIcon {
+  position: absolute;
+  padding: 5% 0 0 5%;
+}
+input {
+  width: 170px;
+  height: 40px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 28px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(245, 245, 245);
+  display: none;
+}
+
+input::placeholder {
+  text-indent: 30px;
+  color: rgb(213, 213, 213);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.top {
+  background-color: rgb(245, 245, 245);
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  display: none;
+  min-width: 1024px;
+}
+
+.topBn {
+  background-color: rgb(245, 245, 245);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.topMark {
+  display: flex;
+}
+.mark:nth-child(2) {
+  margin-left: 25px;
+}
+
+.topMenu {
+  display: flex;
+}
+
+.logoPic {
+  width: 55px;
+  height: 24px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  gap: 15%;
+  align-items: center;
+  height: 80px;
+}
+
+.boBn {
+  background-color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.haertIcon {
+  display: none;
+}
+
+.boMenu {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .top {
+    display: flex;
+  }
+  .boMenu {
+    display: flex;
+  }
+  input {
+    display: flex;
+  }
+
+  .haertIcon {
+    display: inline;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .bugerIcon {
+    display: none;
+  }
+  .icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 1020px) {
+  .shearchArea {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .searchiIcon {
+    position: initial;
+    padding-left: 25px;
+  }
+  .boL {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bugerIcon {
+    display: inline;
+  }
+}
