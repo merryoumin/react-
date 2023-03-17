@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 가로를 세로로 나누어 */
+  grid-template-rows: 100px auto 100px;
+  /* 가로로 세로를 나누어 처음과 마지막 100px 중앙은 auto */
+  height: 100vh;
+}
+/* 위에서 부터 작업 */
+.header {
+  background-color: antiquewhite;
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+
+.nav {
+  background-color: rgb(211, 240, 67);
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.content {
+  background-color: aquamarine;
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+
+.footer {
+  background-color: rgb(94, 160, 235);
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
