@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  color: #222222;
 }
 
 .header {
@@ -24,7 +25,6 @@ button {
 .menu button {
   display: none;
   border: 0px;
-  color: #222222;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -66,4 +66,30 @@ button {
   .ellipsis {
     display: none;
   }
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  /* 100vh는 회면 기준으로 h는 높이 / vw도 있음 */
+  height: 400px;
+  object-fit: cover;
+}
+
+.bannerMessage {
+  position: absolute;
+  /* 절대 값 줄 수 있음 */
+  top: 50%;
+  margin-left: 96px;
+  font-size: 18px;
+  transform: translateY(-50%);
+}
+
+.bannerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
