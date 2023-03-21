@@ -1,0 +1,20 @@
+@import "responsive";
+
+body {
+  margin: 0;
+  background-color: rgb(160, 225, 69);
+
+  @include responsive("tablet") {
+    // @media의 내용임
+    background-color: rgb(62, 188, 197);
+  }
+
+  @include responsive("laptop") {
+    // @media의 내용임
+    background-color: rgb(80, 39, 106);
+  }
+  @include responsive("pc") {
+    // @media의 내용임
+    background-color: rgb(106, 29, 91);
+  }
+}

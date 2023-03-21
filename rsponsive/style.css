@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: rgb(160, 225, 69);
+}
+@media (min-width: 768px) {
+  body {
+    background-color: rgb(62, 188, 197);
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: rgb(80, 39, 106);
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    background-color: rgb(106, 29, 91);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
