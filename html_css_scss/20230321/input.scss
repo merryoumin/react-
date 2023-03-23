@@ -1,15 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import "theme.scss";
 
-$pc: 1280px;
 
-@mixin responsive($device) {
-  @if $device == "pc" {
-    @media (min-width: $pc) {
-      @content;
-    }
-  }
-}
 
 body {
   margin: 0;
